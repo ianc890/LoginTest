@@ -47,7 +47,7 @@ public class LoginTest {
         WebElement statusMessage = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > big > blockquote > blockquote > font > center > b"));
         String status = statusMessage.getText();
 
-        Assert.assertEquals("Login Failed", "**Successful Login**", status);
+        Assert.assertEquals("**Login Failed**", "**Successful Login**", status);
     }
 
 	@Test
@@ -79,7 +79,7 @@ public class LoginTest {
 		WebElement statusMessage = webDriver.findElement(By.cssSelector("body > table > tbody > tr > td.auto-style1 > big > blockquote > blockquote > font > center > b"));
 		String status = statusMessage.getText();
 
-		Assert.assertEquals("Login Failed", "**Successful Login**", status);
+		Assert.assertEquals("**Login Failed**", "**Successful Login**", status);
 	}
 
     @After
